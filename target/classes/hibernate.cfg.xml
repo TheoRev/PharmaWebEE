@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+		<property name="hibernate.connection.password">ambu</property>
+		<property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/farmasur</property>
+		<property name="hibernate.connection.username">theo</property>
+		<property name="hibernate.default_schema">pharmacy</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+		<property name="show_sql">true</property>
+
+		<mapping class="com.hrevfdz.model.Users" />
+		<mapping class="com.hrevfdz.model.Access" />
+		<mapping class="com.hrevfdz.model.IngresoProducto" />
+		<mapping class="com.hrevfdz.model.Laboratory" />
+		<mapping class="com.hrevfdz.model.Payments" />
+		<mapping class="com.hrevfdz.model.Sale" />
+		<mapping class="com.hrevfdz.model.StartWork" />
+		<mapping class="com.hrevfdz.model.StockProducto" />
+		<mapping class="com.hrevfdz.model.Suppliers" />
+	</session-factory>
+</hibernate-configuration>

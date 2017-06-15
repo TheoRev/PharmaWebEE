@@ -10,7 +10,7 @@ public interface IPharmacy<T> {
 
     public boolean Delete(T t) throws Exception;
 
-    public List<T> findAll() throws Exception;
+    public List<T> findAll(String table) throws Exception;
 
     public T findBy(String q) throws Exception;
 
